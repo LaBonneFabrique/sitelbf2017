@@ -1,21 +1,21 @@
-/* eslint-disable no-undef */
-
+import $ from 'jquery';
+import 'jquery-validation';
 import { browserHistory } from 'react-router';
 import { Meteor } from 'meteor/meteor';
 import { Bert } from 'meteor/themeteorchef:bert';
-import './validation.js';
+import { getInputValue } from './get-input-value';
 
 let component;
 
 const login = () => {
-  const email = document.querySelector('[name="emailAddress"]').value;
-  const password = document.querySelector('[name="password"]').value;
+  const email = getInputValue(component.refs.emailAddress);
+  const password = getInputValue(component.refs.password);
 
   Meteor.loginWithPassword(email, password, (error) => {
     if (error) {
       Bert.alert(error.reason, 'warning');
     } else {
-      Bert.alert('Logged in!', 'success');
+      Bert.alert('Vous êtes maintenant identifié', 'success');
 
       const { location } = component.props;
       if (location.state && location.state.nextPathname) {
@@ -28,7 +28,7 @@ const login = () => {
 };
 
 const validate = () => {
-  $(component.loginForm).validate({
+  $(component.refs.login).validate({
     rules: {
       emailAddress: {
         required: true,
@@ -40,18 +40,19 @@ const validate = () => {
     },
     messages: {
       emailAddress: {
-        required: 'Need an email address here.',
-        email: 'Is this email address legit?',
+        required: 'Merci de renseigner l\'adresse mail.',
+        email: 'Cette adresse ne semble pas valide',
       },
       password: {
-        required: 'Need a password here.',
+        required: 'Merci d\'entrer un mot de passe.',
       },
     },
     submitHandler() { login(); },
   });
 };
 
-export default function handleLogin(options) {
+export const handleLogin = (options) => {
   component = options.component;
+
   validate();
-}
+};

@@ -1,0 +1,516 @@
+
+
+
+
+
+
+
+/* ------ NAVIGATION ------ */
+nav {
+	width: 145px;
+    padding-top: 0;
+    padding-bottom: 31px;
+    font-family: arial;
+    text-align: center;
+	float: left;
+}
+
+nav li {
+    width: 89px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+li a#menu-espace-re { font-family: 'open_sansbold'; color:#ccd617; font-size: 12px; } 
+li a#menu-espace-cw { font-family: 'open_sansbold'; color:#fa2d50; font-size: 12px; } 
+li a#menu-espace-sdm { font-family: 'open_sansbold'; color:#29bea9; font-size: 12px; } 
+li a#menu-espace-br { font-family: 'open_sansbold'; color:#fed806; font-size: 12px; } 
+li a#proposer { color:#000; font-family: 'open_sansextrabold'; font-size: 13px; } 
+li a#menu-page { font-family: 'open_sansregular'; font-size: 13px; }
+
+nav a:link {
+    width: 100%;
+	height: 73px;
+	padding-top: 16px;
+    text-decoration: none;
+	color: #d6dbdf;
+	display: block; 
+	float: left;
+	font-color: #000;
+	background-color: #fff;
+}
+nav a:visited {
+    text-decoration: none;
+	color: #000;
+}
+nav a:hover {
+    text-decoration: none;
+	color: #000;
+	background-color: #efeeee; /*Fond de couleur au survol d'un menu*/
+}
+
+/* ------ /NAVIGATION ------ */
+
+
+
+/* ------ FILTRE ------ */
+
+
+/*
+#containerLBF ul { list-style: none; }
+#containerLBF .buttons { margin-bottom: 20px; }
+#containerLBF .list li { width: 100%; float: left; margin-top: 10px; border-bottom: 2px dotted #CCCCCC; padding-bottom: 10px; }
+#containerLBF .grid li { float: left; width: 50%; display: inline-block; height: auto; }
+*/
+
+.buttons {
+	width: 779px; 
+	height: 20px;
+	padding-top: 15px;
+	background-color: #fff;	
+	float: left;
+}
+
+.buttons button { border: 0; background:none; padding-left: 0; margin-right: 10px; outline: none; outline: 0; }
+
+/* ------ /FILTRE ------ */
+
+
+/* ------ A LA UNE ------ */
+#alaune {
+	width: 779px;
+	height: 283px;
+	float: left;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+.image-alaune {
+	width: 437px;
+	height: 283px;
+	display: inline-block;	
+	float: left;
+}
+.texte-alaune {
+	width: 292px;
+	height: 276px;
+	overflow: hidden;
+	background-color: #fed806;
+	display: inline-block;	
+	float: left;
+	color: #fff;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+.date-alaune {
+	font-family: 'open_sansextrabold', Arial, Helvetica, sans-serif;
+	font-size: 60px;
+}
+.txt-alaune-script {
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;
+	font-size: 28px;
+}
+/* ------ /A LA UNE ------ */
+
+
+/* ------ ACTUALITÉS ------ */
+#actualites {
+	width: 779px;
+	float: left;
+	position: relative;
+	padding-bottom: 0px;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+aside.image-actu {
+	width: 194px;
+	height: 192px;
+    float: left;
+	margin-bottom: 0;
+	overflow: hidden;
+	position:relative;
+}
+aside.image-actu img {
+    position: absolute;
+    top: -9999px;
+    bottom: -9999px;
+    left: -9999px;
+    right: -9999px;
+    margin: auto;
+}
+
+.texte-actu {
+	max-width: 164px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	/*white-space: nowrap;*/
+	height: 163px;
+	background-color: #fff;
+	float: left;
+	color: #2a2c32;
+	padding: 15px 15px 15px 15px;
+}
+
+.texte-actu-list {
+	width: 550px;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+  	/*white-space: nowrap;*/
+	max-height: 178px;
+	background-color: #fff;
+	color: #2a2c32;
+	padding: 20px 15px 10px 15px;
+    float: right;
+}
+
+/* ------ /ACTUALITÉS ------ */
+
+.btn-mois {
+	width: 150px;
+	height: 24px;
+	background-color: #dbd9d9;
+	float: left;
+	color: #2a2c32;
+	margin-left: 181px;
+	font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 7px;
+}
+.indication-mois {
+	width: 629px;
+	height: 24px;
+	color: #2a2c32;
+	font-family: 'open_sansbold', Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	text-align: center;
+	padding-top: 7px;
+	float: left;
+}
+
+/*.date-actu {
+	font-size: 30px;
+	font-style: 'open_sansextrabold';
+}
+.txt-actu {
+	font-size: 16px;
+}*/
+
+/* ------ ACTUALITÉS ------ */
+
+
+/* -----------------------------------------------------  PAGE FICHE  ----------------------------------------------------- */
+
+#entete-page {
+	width: 815px;
+	height: 25px;
+	background-color: #efeeee;
+	text-align: center;
+	padding-top: 6px;
+	padding-left: 145px;
+	font-family: 'open_sanssemibold', Arial, Helvetica, sans-serif;
+}
+
+#page {
+	width: 779px;
+	min-height: 682px;
+	padding-top: 40px;
+	float: left;
+	position: relative;
+	padding-left : 36px;
+	padding-bottom:20px;
+	margin-bottom: 0;
+	background-color: #fff;
+}
+
+.date {
+	font-size: 18px;
+	color: #f9375a;
+	font-family: 'open_sansbold', Arial, Helvetica, sans-serif;
+}
+
+.visuel-fiche {
+	width: 779px;
+	height: 315px;
+	overflow: hidden;
+	text-align: center;
+}
+
+.texte-fiche {
+	width: 769px;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	margin-bottom: 20px;
+}
+
+.btn-noir {
+	width: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #1d1f20;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-rose {
+	width: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #f9375a;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-jaune {
+	width: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #fed806;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-vert {
+	width: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #ccd617;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-bleu {
+	width: auto;
+	padding-top: auto;
+	padding-bottom: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #29bea9;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+}
+
+.btn-haut-page {
+	width: auto;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #a7a7a7;
+	text-align: right;
+	float: right;
+	text-decoration: none;
+}
+
+
+/* -----------------------------------------------------  PAGE FORMULAIRE  ----------------------------------------------------- */
+
+form {
+ width:779px;
+}
+
+fieldset {
+ padding:20px 20px 30px 40px;
+ margin-bottom:10px;
+ border:1px solid #eee;
+ border-radius: 3px;
+ height: auto;
+ margin-left: auto;
+ margin-right: auto;
+}
+
+label {
+ margin-left: auto;
+ margin-right: auto;
+ margin-top:20px;
+ margin-bottom: 5px;
+ display:block;
+ font-family: 'open_sanssemibold', Arial, Helvetica, sans-serif;
+ font-size: 14px;
+ }
+label.inline {
+ display:inline;
+ margin-right:50px;
+ }
+input, textarea, select, option {
+ background-color:#fff;
+ }
+input, select #page {
+ padding:3px;
+ /*border:2px solid #ebebeb;*/
+ border-radius:3px;
+ width:500px;
+ height: 25px;
+ }
+ 
+textarea {
+ padding:3px;
+ border:2px solid #ebebeb;
+ border-radius:3px;
+ width:500px;
+ height: 150px;
+ }
+ 
+select #page {
+ margin-top:10px;
+ }
+input[type=radio] {
+ background-color:transparent;
+ border:none;
+ width:10px;
+ }
+input[type=submit], input[type=reset] {
+	width: 100px;
+	height: 30px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #1d1f20;
+	border: 0;
+	border-radius: 20px;
+	font-family: Gloria Hallelujah, Arial, Helvetica, sans-serif;	
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	text-decoration: none;
+	cursor:pointer;
+	display: block;
+	margin-top: 20px;
+	line-height: 10px;
+ }
+
+
+/* -----------------------------------------------------  PAGE LISTE  ----------------------------------------------------- */
+
+#list {
+	width: 815px;
+	float: left;
+	position: relative;
+	/*padding-left : 36px;*/
+	padding-bottom:20px;
+	margin-bottom: 10px;
+	background-color: #fff;
+}
+
+aside.texte-liste {
+	width: 544px;
+	height: 192px;
+	background-color: #fff;
+	float: left;
+	color: #2a2c32;
+	padding: 10px 20px 0 20px;
+	overflow: hidden;
+	line-height: 16px;
+}
+
+/*ul{ border:0; margin:0; padding:0; }*/
+
+#pagination li {
+    border:0; 
+    padding:0;
+    font-size:12px;
+    list-style:none;
+}
+ 
+#pagination a
+{
+    border:solid 1px #ebebeb;
+	border-radius: 3px;
+    margin-right:2px;
+}
+ 
+#pagination .previous-off, #pagination .next-off 
+{
+    color:#a7a7a7;
+    display:block;
+    float:left;
+    font-weight:bold;
+    padding:3px 8px;
+}
+ 
+#pagination .next a, #pagination .previous a {
+    font-weight:bold;
+    border:solid 1px #FFFFFF;
+}
+ 
+#pagination .active {
+    color:#fff;
+    font-weight:bold;
+    display:block;
+    float:left;
+    padding:4px 6px;
+	background-color: #1d1f20;
+	border-radius: 3px;
+    margin-right:2px;
+}
+ 
+#pagination a:link, #pagination a:visited {
+    color:#a7a7a7;
+    display:block;
+    float:left;
+    padding:3px 6px;
+    text-decoration:none;
+}
+ 
+#pagination a:hover {
+    border:solid 1px #a7a7a7;
+}
+
+/* -----------------------------------------------------  FOOTER  ----------------------------------------------------- */
+
+footer {
+	width: 890px;
+	height: 45px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+	padding-left: 40px;
+	padding-right: 30px;
+    background-color: #efeeee; 
+	float: left;
+	background-image: url(img/fd-pdp.png);
+}
+.logo-footer {
+	width: auto;
+	height: 85px;
+	float: left;
+	margin-right: 40px;
+}
+.txt-footer {
+	width: 200px;
+	height: 85px;
+	float: left;
+	margin-right: 160px;
+	color: #888787;
+	font-size: 10px; 
+    font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+	line-height: 14px;
+}
+
+

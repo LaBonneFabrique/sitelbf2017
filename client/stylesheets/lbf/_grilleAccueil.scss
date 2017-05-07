@@ -1,0 +1,82 @@
+// Définition des tailles des grilles
+$cellule: 190;
+$footer: 40;
+$gutter: 11;
+$simple: (2*$cellule+$gutter);
+$margeImg: 11;
+$imageWidth: $cellule;
+
+//définition du cadre
+.carte {
+    width: $simple*1px;
+    height: $cellule*1px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: $gutter*1px;
+    border: 0px solid black;
+
+        .impair{
+            margin: 0px;
+            padding: 0px;
+            float: left;
+            margin-right: $margeImg*1px;
+            border: 0px solid green;
+            width: $cellule*1px
+        }
+    
+        .pair{
+            margin: 0px;
+            padding: 0px;
+            float: right;
+            margin-left: $margeImg*1px;
+            border: 0px solid red;
+            width: $cellule*1px
+        }
+
+    .data {
+        margin: 0px;
+        padding: 0px;
+        width: $cellule;
+        .corps {
+            height: ($cellule - $footer)*1px;
+            margin: 0px;
+            padding: 0px;
+            font-family: 'open_sansregular', Arial, Helvetica, sans-serif;
+            font-size: small;
+        }
+        .footer {
+            margin-right: 5px;
+            height: $footer*1px;
+            display: -webkit-box;
+            display: -moz-box;
+            display: -ms-flexbox;
+            display: -webkit-flex;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            
+            -webkit-justify-content: flex-end;
+            -webkit-align-items: center;
+        }
+        
+        h1 {
+            font-size: 30px; 
+            font-family: 'open_sansextrabold', Arial, Helvetica, sans-serif;
+            color: #2a2c32; 
+            margin: 0px;
+            padding: 0px;
+        	padding-bottom: 10px;
+        }
+        h3 {
+            font-size: 16px; 
+        	line-height: 16px;
+            font-family: 'open_sansextrabold', Arial, Helvetica, sans-serif;
+            color: #2a2c32; 
+            padding: 0px;
+            margin: 0px;
+        	padding-bottom: 3px;
+        	max-height: 32px;
+        	overflow: hidden;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+$imageSize: 206;
+$navCollapse: 900-$imageSize;
+
+nav {
+	width: 145px;
+    padding-top: 0;
+    padding-bottom: 31px;
+    font-family: arial;
+    text-align: center;
+	float: left;
+	border: 1px solid black;
+	clear: both;
+	height: 600px;
+}
+
+header {
+    nav.navbar, nav.navbar-default {
+        margin: 0px;
+        padding: 0px;
+        width: 0px;
+        height: 83px;
+        border: 1px solid green;
+        
+        .container {
+        text-align: left;
+        margin: 0px;
+        padding: 0px;
+        border: 0px solid red;
+        
+        .navbar-collapse {
+            margin-left: $imageSize*1px;
+            width: $navCollapse*1px;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+        }
+        }
+    }
+}

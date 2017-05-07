@@ -1,19 +1,29 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+//import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'; // bascule vers materialize
 import { Grid } from 'react-bootstrap';
-import AppNavigation from '../components/AppNavigation';
+import AppNavigation from '../containers/app-navigation';
 
-const App = ({ children }) => (
-  <div>
+//theme de base material-ui
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
+export const App = React.createClass({
+  propTypes: {
+    children: React.PropTypes.element.isRequired,
+  },
+  render() {
+    Session.set("Mongol_settings_display", true);
+    return  <MuiThemeProvider>
+    
+    <div className="wrapper">
+
     <AppNavigation />
-    <Grid>
-      { children }
-    </Grid>
-  </div>
-);
+    <nav>
+      menu principal
+    </nav>
+      <Grid className="containerLBF">
+        { this.props.children }
+      </Grid>
 
-App.propTypes = {
-  children: PropTypes.node,
-};
-
-export default App;
+        </div></MuiThemeProvider>;
+  },
+});

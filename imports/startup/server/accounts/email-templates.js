@@ -1,7 +1,7 @@
 import { Accounts } from 'meteor/accounts-base';
 
-const name = 'Application Name';
-const email = '<support@application.com>';
+const name = 'La Bonne fabrique';
+const email = '<atelier@labonnefabrique.fr>';
 const from = `${name} ${email}`;
 const emailTemplates = Accounts.emailTemplates;
 
@@ -10,16 +10,14 @@ emailTemplates.from = from;
 
 emailTemplates.resetPassword = {
   subject() {
-    return `[${name}] Reset Your Password`;
+    return `[${name}] Changement du mot de passe`;
   },
   text(user, url) {
     const userEmail = user.emails[0].address;
     const urlWithoutHash = url.replace('#/', '');
 
-    return `A password reset has been requested for the account related to this
-    address (${userEmail}). To reset the password, visit the following link:
-    \n\n${urlWithoutHash}\n\n If you did not request this reset, please ignore
-    this email. If you feel something is wrong, please contact our support team:
+    return `Un changement de mot de passe a été demandé pour ce compte, lié à cette adresse mail (${userEmail}). Pour changer de mot de passe, cliquer sur le lien suivant :
+    \n${urlWithoutHash}\n\n Si vous n'avez pas demandé à changer de mot de passe, merci d'ignorer ce mail. Si vous pensez qu'il y a un problème, merci de nous contacter à
     ${email}.`;
   },
 };

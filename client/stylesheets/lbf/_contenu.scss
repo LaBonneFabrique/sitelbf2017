@@ -1,0 +1,16 @@
+$margeGauche: 0;
+$largeur: 815-$margeGauche;
+
+.containerLBF { 
+	list-style: none;
+	width: $largeur*1px!important;
+	min-height: 743px;
+	float: left;
+	position: relative;
+	padding: 0px!important;
+	margin-left: $margeGauche*1px!important;
+	padding-bottom: 20px;
+	margin-bottom: 0;
+	background-color: #fff;
+	border: 1px solid black;
+}

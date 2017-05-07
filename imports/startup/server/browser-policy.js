@@ -1,3 +1,7 @@
-import { BrowserPolicy } from 'meteor/browser-policy-common';
+ import { BrowserPolicy } from 'meteor/browser-policy-common';
+ BrowserPolicy.content.allowFontDataUrl();
+ BrowserPolicy.content.allowOriginForAll( 'fonts.googleapis.com' );
+ BrowserPolicy.content.allowOriginForAll( 'https://fonts.gstatic.com');
 // e.g., BrowserPolicy.content.allowOriginForAll( 's3.amazonaws.com' );
-BrowserPolicy.content.allowFontOrigin("data:");
+//https://fonts.googleapis.com/css?family=Roboto:400,300,500
+
