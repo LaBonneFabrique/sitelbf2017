@@ -130,6 +130,7 @@ export class PageAdherent extends React.Component {
   panelFamille() {
       self = this;
      var premierMembre = this.state.premierMembre;
+     console.log(Meteor.user());
  const ListeFamille = Meteor.user().famille.map(function(membre) {
        
           var primaryText=<p className="noSpace spaceBottom">{membre.prenom}</p>

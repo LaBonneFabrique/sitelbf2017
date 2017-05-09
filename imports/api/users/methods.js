@@ -37,20 +37,14 @@ export const updateProfile = new ValidatedMethod({
     "update.adhesionFamille": {
       type:Boolean
     },
-    "update.famille": {
-      type: Array
-    },
     "update.famille.$": {
       type: Object
     },
     "update.reglageService": {
       type: Boolean
     },
-    "update.roles": {
-      type: Array
-    },
     "update.roles.$": {
-      type:String
+      type: String
     }
   }).validator(),
   run({ usereId, update }) {
@@ -104,10 +98,6 @@ export const ajoutMembreFamille = new ValidatedMethod({
       type: Date,
       optional: true
     },
-    "update.famille.$.inscriptions": {
-      type: Array,
-      optional: true
-    },
     "update.famille.$.inscriptions.$": {
       type: String,
       optional: true
@@ -128,9 +118,6 @@ export const updateFamille = new ValidatedMethod({
     update: {
       type: Object
     },
-    'update.famille': {
-      type: Array
-    },
     'update.famille.$': {
       type: Object
     },
@@ -149,10 +136,6 @@ export const updateFamille = new ValidatedMethod({
       type: Date,
       optional: true
     },
-    'update.famille.$.inscriptions': {
-        type: Array,
-        optional: true
-    },
     'update.famille.$.inscriptions.$': {
         type: String,
         optional: true
@@ -169,10 +152,7 @@ export const updateRoles = new ValidatedMethod({
     userId: {
       type: String
     },
-    newRoles: {
-      type: Array
-    },
-    "newRoles.$": {
+    'newRoles.$': {
       type: String
     }
   }).validator(),

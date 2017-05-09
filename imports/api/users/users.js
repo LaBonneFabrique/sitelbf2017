@@ -34,8 +34,8 @@ Users.Famille = new SimpleSchema({
       type: Date,
       optional: true
     },
-    inscriptions: {
-        type: Array,
+    'inscriptions.$': {
+        type: String,
         optional: true
     }
 }); 
@@ -78,8 +78,8 @@ Users.User = new SimpleSchema({
         optional: true,
         blackbox: true
     },
-    roles: {
-        type: Array,
+    'roles.$': {
+        type: String,
         optional: true,
         blackbox: true
     },
@@ -88,20 +88,16 @@ Users.User = new SimpleSchema({
         optional: true
     },
     //La table des id des activités passées et à venir auxquelles l'utilisateur s'est inscrit
-    inscriptions: {
-        type: Array,
+    'inscriptions.$': {
+        type: String,
         optional: true
     },
     adhesionFamille: {
         type: Boolean,
         optional: true
     },
-    famille: {
-        type:Array,
-        optional: true
-    },
-    "famille.$": {
-        type: Users.Famille
+    'famille.$': {
+        type:Users.Famille
     }
 });
 

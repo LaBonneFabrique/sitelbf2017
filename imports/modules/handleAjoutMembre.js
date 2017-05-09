@@ -42,14 +42,18 @@ const handleSubmit = () => {
       const age=component.refs.age.getValue();
       const userId = Meteor.userId();
       var famille = Meteor.user().famille;
-         if (age!="") {
+      console.log(famille)
+       /*  if (age!="") {
         famille.push({_id: id, nom: nom, prenom: prenom, age: ageDate, inscriptions:[]});
-         } else { famille.push({_id: id,nom: nom, prenom: prenom, inscriptions:[]});}
-    
-      const update = {famille: famille};
+         } else { famille.push({_id: id,nom: nom, prenom: prenom, inscriptions:[]});}*/
+         famille = [{_id:id}];
+    console.log(famille)
+      //const update = famille; //{famille: famille};
+      //console.log(update)
      const messageOK = prenom + " a été ajouté.e";
-      ajoutMembreFamille.call({userId, update}, (error) => {
+      ajoutMembreFamille.call({userId, famille}, (error) => {
       if (error) {
+          console.log(error)
         Bert.alert(error.reason, 'danger');
       } else {
           Bert.alert(messageOK, 'success');

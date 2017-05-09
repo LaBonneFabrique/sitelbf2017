@@ -44,7 +44,7 @@ const handleSubmit = () => {
         roles:roles
         };
   } 
-  
+  console.log(update)
 if ($("[name='choix']").is(":checked")) {
 // pas d'utilisation des services extérieurs
         const password = component.refs.password.getValue();
@@ -52,10 +52,12 @@ if ($("[name='choix']").is(":checked")) {
            Accounts.createUser({
         email: email,
         password: password,
-        profile: update.profile
+        profile: update.profile,
+        famille: update.famille
       }, function (error) {
         if (error) {
           Bert.alert(error.reason, 'danger');
+          console.log(error)
         } else {
           Bert.alert('Merci pour votre inscription.', 'success');
           

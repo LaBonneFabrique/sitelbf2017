@@ -11,10 +11,9 @@ const handleSubmit = () => {
     const email = component.refs.emailAddress.getValue();
     if(type==="password") {
         const password = component.refs.password.getValue();
-
-        Meteor.loginWithPassword({email: email}, password, ( error ) => {
+        Meteor.loginWithPassword(email, password, ( error ) => {
             if ( error ) {
-                Bert.alert( error.reason, 'warning' );
+                Bert.alert( error, 'warning' );
             } else {
                 Bert.alert( 'Vous êtes maintenant identifié.', 'success' );
             }

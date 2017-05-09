@@ -1,4 +1,5 @@
  import { BrowserPolicy } from 'meteor/browser-policy-common';
+ BrowserPolicy.content.allowEval()
  BrowserPolicy.content.allowFontDataUrl();
  BrowserPolicy.content.allowOriginForAll( 'fonts.googleapis.com' );
  BrowserPolicy.content.allowOriginForAll( 'https://fonts.gstatic.com');

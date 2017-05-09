@@ -1,5 +1,5 @@
 import React from 'react';
-import handleInscription from '../../modules/inscription.js';
+import {handleInscription} from '../../modules/inscription.js';
 import FontAwesome from 'react-fontawesome';
 //bascule vers Material-ui
 import TextField from 'material-ui/TextField';
